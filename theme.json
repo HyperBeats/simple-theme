@@ -1,0 +1,11 @@
+{
+    "id": "simple",
+    "name": "simple",
+    "description": "Modern dark theme with configurable color.",
+    "version": "1.0.0",
+    "authors": [
+        "HyperBeats"
+    ],
+    "azuriom_api": "1.1.0",
+    "apiId": "simple"
+}

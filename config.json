@@ -1,0 +1,29 @@
+{
+    "color_main": "#519455",
+    "color_seconde": "#333333",
+    "legal_links": {
+        "{index}": {
+            "name": "CGU - CGV - CGC",
+            "value": "https://azuriom.com/"
+        }
+    },
+    "cta_title": "Lorem Ipsum",
+    "cta_description": "Lorem Ipsum is simply dummy text of the printing and",
+    "cta_button_type": "server",
+    "cta_button_text": "Exemple",
+    "cta_button_link": "https://azuriom.com/",
+    "about_image": null,
+    "about_image2": null,
+    "main_title": "Exemple Name",
+    "about_button1": "VOTER",
+    "about_button1_link": "https://azuriom.com/",
+    "main_description": "Une super description",
+    "about_title": "Lorem Ipsum",
+    "about_description": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>",
+    "about_title_2": "Lorem Ipsum",
+    "about_description_2": "<p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>",
+    "about_button2": "DISCORD",
+    "about_button2_link": "https://azuriom.com/",
+    "color_about_button_1": "#3cbf42",
+    "color_about_button_2": "#4d28cd"
+}
