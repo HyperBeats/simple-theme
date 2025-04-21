@@ -121,7 +121,7 @@
                             @else
                                 0
                             @endif
-                            Joueurs en ligne
+                            {{ trans('theme::simple.home.online_server_text') }}
                         </div>
             </div>
         </div>

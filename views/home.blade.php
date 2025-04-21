@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img src="{{ theme_config('about_image') ? image_url(theme_config('about_image')) : theme_asset('img/steve.webp') }}"
+                    <img src="{{ theme_config('about_image') ? image_url(theme_config('about_image')) : theme_asset('img/54335565.png') }}"
                         alt="About Image" class="about-image">
                 </div>
                 <div class="col-lg-7">
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{{ theme_config('about_image2') ? image_url(theme_config('about_image2')) : theme_asset('img/steve.webp') }}"
+                    <img src="{{ theme_config('about_image2') ? image_url(theme_config('about_image2')) : theme_asset('img/54335565.png') }}"
                         alt="About Image" class="about-image">
                 </div>
             </div>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM chargé, initialisation des boutons .server-ip');
+    console.log('DOM loaded, initializing .server-ip buttons');
     const buttons = document.querySelectorAll('.server-ip');
     let isAnimating = false;
 
@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', async (e) => {
             e.preventDefault();
             if (isAnimating) {
-                console.log('Clic ignoré : animation en cours');
+                console.log('Click ignored: animation in progress');
                 return;
             }
 
-            console.log('Clic sur le bouton, début de la copie');
+            console.log('Button clicked, starting copy process');
             isAnimating = true;
             const textToCopy = button.dataset.clipboardText;
             const originalText = button.textContent;
@@ -19,21 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 await navigator.clipboard.writeText(textToCopy);
-                console.log(`Texte copié avec succès : ${textToCopy}`);
+                console.log(`Text copied successfully: ${textToCopy}`);
                 button.textContent = copyMessage;
             } catch (err) {
-                console.error('Échec de la copie :', err);
-                button.textContent = 'Erreur de copie';
+                console.error('Copy failed:', err);
+                button.textContent = 'Copy error';
             }
 
             button.style.pointerEvents = 'none';
-            console.log('Bouton désactivé (pointerEvents: none)');
+            console.log('Button disabled (pointerEvents: none)');
 
             setTimeout(() => {
                 button.textContent = originalText;
                 button.style.pointerEvents = 'auto';
                 isAnimating = false;
-                console.log('Bouton réinitialisé : texte et interactions restaurés');
+                console.log('Button reset: text and interactions restored');
             }, 2000);
         });
     });

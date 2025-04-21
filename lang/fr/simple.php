@@ -49,6 +49,7 @@ return [
     ],
     'home' => [
         'ip' => 'Adresse IP copiée !',
+        'online_server_text' => 'Joueurs en ligne',
     ],
     'colors' => [
         'red' => 'Rouge',

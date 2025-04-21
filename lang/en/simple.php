@@ -50,6 +50,7 @@ return [
     ],
     'home' => [
         'ip' => 'IP Address Copied!',
+        'online_server_text' => 'Players online',
     ],
     'colors' => [
         'red' => 'Red',
