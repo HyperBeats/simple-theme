@@ -45,37 +45,30 @@
                         <div class="dropdown">
                             <div class="d-flex align-items-center dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false" data-bs-auto-close="outside">
-                                <img src="https://minotar.net/avatar/{{ Auth::user()->name }}" alt="Player Avatar"
+                                <img src="{{ Auth::user()->getAvatar() }}" alt="Player Avatar"
                                     class="nav-avatar" width="32" height="32">
                                 <span class="text-white ms-2 fw-bold">{{ Auth::user()->name }}</span>
                             </div>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <a class="dropdown-item" href="{{ route('profile.index') }}">
-                                        {{ trans('messages.nav.profile') }}
-                                    </a>
-                                </li>
-                                @foreach (plugins()->getUserNavItems() ?? [] as $navId => $navItem)
-                                    <li>
-                                        <a class="dropdown-item" href="{{ route($navItem['route']) }}">
-                                            {{ trans($navItem['name']) }}
-                                        </a>
-                                    </li>
-                                @endforeach
-                                @if (Auth::user()->hasAdminAccess())
-                                    <li>
-                                        <a class="dropdown-item" href="{{ route('admin.dashboard') }}">
-                                            {{ trans('messages.nav.admin') }}
-                                        </a>
-                                    </li>
-                                @endif
+                                <a class="dropdown-item" href="{{ route('profile.index') }}">
+                                    <i class="bi bi-person"></i> {{ trans('messages.nav.profile') }}
+                                </a>
+                                @foreach(plugins()->getUserNavItems() ?? [] as $navId => $navItem)
+                                <a class="dropdown-item" href="{{ route($navItem['route']) }}">
+                                    <i class="{{ $navItem['icon'] ?? 'bi bi-three-dots' }}"></i> {{ trans($navItem['name']) }}
+                                </a>
+                            @endforeach
+                            @if(Auth::user()->hasAdminAccess())
+                            <a class="dropdown-item" href="{{ route('admin.dashboard') }}">
+                                <i class="bi bi-speedometer2"></i> {{ trans('messages.nav.admin') }}
+                            </a>
+                        @endif
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li>
-                                    <a class="dropdown-item text-danger" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        {{ trans('auth.logout') }}
+                                    <a class="dropdown-item text-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        <i class="bi bi-box-arrow-right"></i> {{ trans('auth.logout') }}
                                     </a>
                                 </li>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
