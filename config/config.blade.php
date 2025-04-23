@@ -95,13 +95,17 @@
 @endpush
 
 @section('content')
-    <div class="card shadow">
-        <div class="card-header d-flex justify-content-between align-items-center">
-            <h4 class="mb-0">{{ trans('theme::simple.config.general') }}</h4>
-            <a href="https://discord.com/invite/pu2XxCT6VR" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-discord"></i> Support
-            </a>
-        </div>
+<div class="card-header d-flex justify-content-between align-items-center">
+    <h4 class="mb-0">{{ trans('theme::simple.config.general') }}</h4>
+    <div class="d-flex gap-2"> <!-- Ajoutez un conteneur pour les boutons -->
+        <a href="https://discord.gg/yv3Z6NgSCj" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-discord"></i> Support Discord
+        </a>
+        <a href="https://github.com/HyperBeats/simple-theme" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i> Github
+        </a>
+    </div>
+</div>
         <div class="card-body">
             <form action="{{ route('admin.themes.config', $theme) }}" method="POST" id="configForm">
                 @csrf
