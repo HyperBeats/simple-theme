@@ -309,6 +309,7 @@ body {
 
 @media (max-width: 768px) {
     .hero-logo {
+        font-size: 80px;
         max-width: 280px;
         margin-bottom: 2rem;
     }
@@ -1026,7 +1027,7 @@ p{
     }
 
     .btn-primary {
-        width: 100%;
+        width: 60%;
         margin-bottom: 0.5rem;
     }
 
@@ -1306,6 +1307,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 88px;
     height: 88px;
     object-fit: contain; /* Assure que l'image reste proportionnée */
+    color: var(--primary-color);;
 }
 .profil-btn:hover{
     cursor: pointer;
