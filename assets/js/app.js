@@ -38,3 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar-nav');
+    if (navbar && navbar.querySelectorAll('li').length === 7) {
+        navbar.classList.add('has-7-items');
+    }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar-nav');
+    if (navbar && navbar.querySelectorAll('li').length === 8) {
+        navbar.classList.add('has-8-items');
+    }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.navbar-nav');
+    if (navbar && navbar.querySelectorAll('li').length === 9) {
+        navbar.classList.add('has-9-items');
+    }
+});

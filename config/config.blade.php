@@ -106,11 +106,11 @@
         </a>
     </div>
 </div>
-        <div class="card-body">
+        <div class="card-body shadow">
             <form action="{{ route('admin.themes.config', $theme) }}" method="POST" id="configForm">
                 @csrf
 
-                <div class="card bg-light mb-4">
+                <div class="card  mb-4">
                     <div class="card-body">
                         <div class="mb-3">
                             <label class="form-label" for="color_mainInput">{{ trans('theme::simple.config.color_main') }}</label>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <h4 class="mb-3">{{ trans('theme::simple.config.main_section') }}</h4>
-                <div class="card bg-light mb-4">
+                <div class="card  mb-4">
                     <div class="card-body">
                         <div class="mb-3">
                             <label class="form-label" for="mainTitleInput">{{ trans('theme::simple.config.title_main') }}</label>
@@ -150,7 +150,7 @@
                 </div>
 
                 <h4 class="mb-3">{{ trans('theme::simple.config.about_section1') }}</h4>
-                <div class="card bg-light mb-4">
+                <div class="card  mb-4">
                     <div class="card-body">
                         <div class="mb-3">
                             <label class="form-label" for="aboutTitleInput">{{ trans('theme::simple.config.about_title') }}</label>
@@ -220,7 +220,7 @@
                     </div>
                 </div>
                 <h4 class="mb-3">{{ trans('theme::simple.config.about_section_2') }}</h4>
-                <div class="card bg-light mb-4">
+                <div class="card  mb-4">
                     <div class="card-body">
                         <div class="mb-3">
                             <label class="form-label" for="aboutTitleInput_2">{{ trans('theme::simple.config.about_title_2') }}</label>
@@ -291,7 +291,7 @@
                 </div>
 
                 <h4 class="mb-3">{{ trans('theme::simple.config.cta_section') }}</h4>
-                <div class="card bg-light mb-4">
+                <div class="card  mb-4">
                     <div class="card-body">
                         <div class="mb-3">
                             <label class="form-label" for="ctaTitleInput">{{ trans('theme::simple.config.cta_title') }}</label>
@@ -349,7 +349,7 @@
                     </div>
                 </div>
                 <h4 class="mb-3">{{ trans('theme::simple.config.footer_section') }}</h4>
-                <div class="card bg-light mb-4">
+                <div class="card  mb-4">
                     <div class="card-body">
                         <div class="mb-3">
                         <label class="form-label">{{ trans('theme::simple.config.legal_links') }}</label>

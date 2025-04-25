@@ -84,6 +84,8 @@ body {
 .navbar-nav {
     gap: 1rem;
 }
+
+
 .player-btn {
     background: transparent;
     border: none;
@@ -1109,12 +1111,45 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+
+.navbar-nav > li:nth-child(7):nth-last-child(1) ~ .navbar-nav::before {
+  /* Styles pour chaque <li> */
+    margin-left: -125px;
+}
+.navbar-nav.has-7-items {
+    margin-left: -125px;
+}
+.navbar-nav.has-8-items {
+    margin-left: -175px;
+}
+
+.navbar-nav > li:nth-child(8):nth-last-child(1) ~ .navbar-nav::before {
+    /* Styles pour chaque <li> */
+    margin-left: -155px;
+}
+.navbar-nav {
+
+    max-width: 101%; /* Adjust this value as needed */
+    flex-wrap: nowrap; /* Prevent wrapping if possible */
+    width: max-content;
+
+}
+.auth-button {
+    display: inline-flex;
+    align-items: center;
+    height: 100%; /* Match the height of nav-links */
+    width: max-content;
+
+    padding: 0.5rem 1rem; /* Match padding of nav-links */
+}
 .description-launcher {
     color: #ffffff !important; /* Your desired color */
     position: relative !important;
     font-size: large;
 }
 .list-group-item+.list-group-item {
+    color: white;
     background: #1e1e1e;
     border-top-width: 0;
 }
@@ -1128,6 +1163,8 @@ h1, h2, h3, h4, h5, h6 {
     border: var(--bs-list-group-border-width) solid #1e1e1e;
 }
 .list-group-item:first-child {
+    color: white;
+
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     background: #1e1e1e;
@@ -1172,7 +1209,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav .nav-link  {
     color: #ffffff !important;
     font-size: 16px !important;
-    padding: 10px 15px !important;
+    padding: 15px 10px !important;
     transition: color 0.3s ease !important;
 }
 

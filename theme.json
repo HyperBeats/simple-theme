@@ -2,10 +2,10 @@
     "id": "simple",
     "name": "simple",
     "description": "Modern dark theme with configurable color.",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "authors": [
         "HyperBeats"
     ],
     "azuriom_api": "1.1.0",
-    "apiId": "simple"
+    "apiId": 165
 }

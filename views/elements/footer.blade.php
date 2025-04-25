@@ -7,7 +7,9 @@
                 <div>
                     <h5 class="footer-title mb-0">{{ site_name(0) }}</h5>
                     @foreach (theme_config('legal_links') ?? [] as $link)
-                    <p class="footer-copyright mt-1 mb-0 "> <a href="{{ $link['value'] }}">{{ $link['name'] }}</a></p>
+                    <p class="footer-copyright mt-1 mb-0">
+                        <a href="{{ $link['value'] }}" target="_blank" rel="noopener noreferrer">{{ $link['name'] }}</a>
+                    </p>                    
                     @endforeach
 
                 </div>
